@@ -168,7 +168,7 @@ const NewJob = props => {
       await dbServices
         .updateProjectWorkers(projectId, updatedProjectWorkers, currentUser.org)
         .then(() => {
-          props.showJobForm()
+          props.showJobForm(e)
         })
     } catch (error) {
       console.warn(error)
@@ -205,7 +205,6 @@ const NewJob = props => {
             type="text"
             name="name"
             id="name"
-            test-id="task-name"
             onChange={handleChange}
             value={values.name}
             onBlur={handleBlur}
@@ -217,7 +216,6 @@ const NewJob = props => {
           <Textarea
             name="description"
             id="description"
-            test-id="task-desc"
             onChange={handleChange}
             value={values.description}
             onBlur={handleBlur}
@@ -230,7 +228,6 @@ const NewJob = props => {
             type="number"
             name="total_hours"
             id="total_hours"
-            test-id="task-hours"
             onChange={handleChange}
             value={values.total_hours}
             onBlur={handleBlur}
@@ -243,7 +240,6 @@ const NewJob = props => {
             type="date"
             name="deadline"
             id="deadline"
-            test-id="task-deadline"
             onChange={handleChange}
             value={values.deadline}
             onBlur={handleBlur}
@@ -256,16 +252,15 @@ const NewJob = props => {
           defaultValue={getEmployees()}
           placeholder="Assign Employees"
         />
+        <button className="btn_secondary_color" onClick={props.showJobForm}>
+          Cancel
+        </button>
         <button
           className="btn_highlight_color"
           type="submit"
-          test-id="submit-task"
           disabled={isSubmitting}
         >
           Submit
-        </button>
-        <button className="btn_secondary_color" onClick={props.showJobForm}>
-          Cancel
         </button>
       </form>
     </>

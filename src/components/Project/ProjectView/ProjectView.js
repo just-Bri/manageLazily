@@ -133,12 +133,6 @@ export default class ProjectView extends Component {
       })
   }
 
-  submitJobForm = () => {
-    this.setState({
-      showJobForm: false
-    })
-  }
-
   expandStats = () => {
     this.setState({
       expandStats: !this.state.expandStats,
@@ -239,7 +233,7 @@ export default class ProjectView extends Component {
                   {...this.props}
                   setJob={this.setJob}
                   project={project}
-                  showJobForm={this.submitJobForm}
+                  showJobForm={this.showJobForm}
                   projectId={this.props.id}
                 />
               )}

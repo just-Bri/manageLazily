@@ -194,8 +194,30 @@ class JobItem extends Component {
   }
 
   toggleExpand = () => {
+    let employeeHours = []
+    let labels = []
+    this.props.job.employee_hours &&
+      this.props.job.employee_hours.forEach(emp => {
+        labels.push(emp.name)
+        employeeHours.push(emp.hours)
+      })
+
+    if (employeeHours.every(item => item === 0)) {
+      employeeHours = []
+    }
     this.setState({
       expandJob: !this.state.expandJob,
+      employeeHours: {
+        labels: labels,
+        datasets: [
+          {
+            label: this.state.employeeHours.datasets[0].label,
+            data: employeeHours,
+            backgroundColor: this.state.employeeHours.datasets[0]
+              .backgroundColor,
+          },
+        ],
+      },
     })
   }
 
@@ -204,12 +226,6 @@ class JobItem extends Component {
     this.setState({
       showEditForm: !this.state.showEditForm,
       expandJob: false,
-    })
-  }
-
-  submitEditForm = () => {
-    this.setState({
-      showEditForm: false
     })
   }
 
@@ -232,12 +248,6 @@ class JobItem extends Component {
     this.setState({
       showWorkerEditForm: !this.state.showWorkerEditForm,
       expandJob: false,
-    })
-  }
-
-  submitWorkerEdit = () => {
-    this.setState({
-      showWorkerEditForm: false
     })
   }
 
@@ -286,7 +296,7 @@ class JobItem extends Component {
                 )}
                 {job.status !== 'completed'
                   ? dateConversions.dateDiff(job.deadline) &&
-                    dateConversions.dateDiff(job.deadline)
+                    `Overdue by ${dateConversions.dateDiff(job.deadline)} days`
                   : ''}
               </div>
             </div>
@@ -313,14 +323,14 @@ class JobItem extends Component {
             )}
             {this.state.showEditForm && (
               <div className="JobItem__form">
-                <JobForm showJobForm={this.submitEditForm} job={job} />
+                <JobForm showJobForm={this.showEditForm} job={job} />
               </div>
             )}
             {this.state.showWorkerEditForm &&
               this.context.currentUser.role === 'project worker' && (
                 <WorkerEditForm
                   job={job}
-                  renderEditForm={this.submitWorkerEdit}
+                  renderEditForm={this.showWorkerEditForm}
                   handleStatus={this.handleApprovalSubmit}
                 />
               )}

@@ -77,7 +77,7 @@ const ProjectForm = props => {
       <Input
         name="name"
         id="project_name"
-        test-id="project_name"
+        test-id='project_name'
         type="text"
         placeholder="Project Name"
         onChange={handleChange}
@@ -92,7 +92,7 @@ const ProjectForm = props => {
       <Textarea
         name="description"
         id="project_description"
-        test-id="project_desc"
+        test-id='project_desc'
         type="text"
         placeholder="Project Description"
         onChange={handleChange}
@@ -113,17 +113,13 @@ const ProjectForm = props => {
       <input
         name="deadline"
         id="project_deadline"
-        test-id="project_deadline"
+        test-id='project_deadline'
         type="date"
         onChange={handleChange}
         value={values.deadline}
         onBlur={handleBlur}
       />
-      <button
-        test-id="project-submit"
-        className="btn_highlight_color"
-        type="submit"
-      >
+      <button className="btn_highlight_color" type="submit">
         Submit
       </button>
       <button className="btn_secondary_color" onClick={props.toggleForm}>
