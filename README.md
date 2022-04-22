@@ -105,17 +105,17 @@ npm run test:open
 
 | Landing Page | Dashboard|
 | :-------------: |:-------------:|
-| <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/landing_page.png" width='80%' height='auto'> | <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/dashboard.png" width='80%' height='auto'> |
+| <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/landing_page.png" width='80%' height='auto'> | <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/dashboard.png" width='80%' height='auto'> |
 | Login | Register|
-| <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/login_page.png" width='80%' height='auto'> | <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/register.png" width='80%' height='auto'> |
+| <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/login_page.png" width='80%' height='auto'> | <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/register.png" width='80%' height='auto'> |
 | Add Project | Edit Project|
-| <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/add_project.png" width='80%' height='auto'> | <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/edit_project.png" width='80%' height='auto'> |
+| <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/add_project.png" width='80%' height='auto'> | <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/edit_project.png" width='80%' height='auto'> |
 | Add Task | Edit Task|
-| <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/add_task.png" width='80%' height='auto'> | <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/edit_task.png" width='80%' height='auto'> |
+| <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/add_task.png" width='80%' height='auto'> | <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/edit_task.png" width='80%' height='auto'> |
 | Project View | Log Hours|
-| <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/project_view.png" width='80%' height='auto'> | <img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/log_hours.png" width='80%' height='auto'> |
+| <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/project_view.png" width='80%' height='auto'> | <img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/log_hours.png" width='80%' height='auto'> |
 | Profile View | Catch All Page |
-|<img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/user_profile.png" width='80%' height='auto'>|<img src="https://github.com/reifnotreef/manageLazily/raw/master/screenshots/catchall.png" width='80%' height='auto'>|
+|<img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/user_profile.png" width='80%' height='auto'>|<img src="https://github.com/balayaydemir/Capstone-Group3-Client/blob/master/screenshots/catchall.png" width='80%' height='auto'>|
 
 
 ## License
